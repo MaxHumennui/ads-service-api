@@ -1,6 +1,4 @@
-# Laravel Ad Tracker
-
-This is a Laravel application that tracks ad impressions and clicks from visitors. It also provides statistical data about ad performance.
+# Ads Service API
 
 ## Table of Contents
 
@@ -27,7 +25,7 @@ Follow these steps to get your development environment set up:
 
 ```sh
 git clone git@github.com:MaxHumennui/ads-service-api.git
-cd laravel-ad-tracker
+cd ads-service-api
 ```
 
 ### 2. Install Dependencies
