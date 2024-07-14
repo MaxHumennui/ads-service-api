@@ -71,7 +71,12 @@ class VisitorController extends Controller
             ['visitor_id' => $visitor->id, 'ad_id' => $adId]
         );
 
-        $adImpression->impressions++;
+        if (!$adImpression->exists) {
+            $adImpression->impressions = 1;
+        } else {
+            $adImpression->impressions++;
+        }
+
         $adImpression->save();
 
         $ad = Ad::find($adId);
